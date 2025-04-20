@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Job Application Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Job Application Form</h1>
+      <p id="description"> Are the right person for out company? Let us know by filling out the form!</p>
+      <form id="survey-form" action="https://example.com/submit" method="post">
+        <fieldset>
+          <label id="name-label" for="name">Enter your first name:<input id="name" name="first-name" type="text" placeholder="John" required></label>
+          <label id="l-name-label" for="l-name">Enter your last name:<input id="l-name" name="last-name" type="text" placeholder="Smith" required></label>
+          <label id="number-label" for="number">Enter your age:<input id="number" name="age" type="number" min="16" max="120" placeholder="25" required></label>
+          <label id="email-label" for="email">Enter your email:<input id="email" name="e-mail" type="email" placeholder="john.smith@gmail.com" required></label>
+          <label id="phone-number-label" for="phone-number">Enter your phone number:<input id="phone-number" name="cell-number" type="tel" placeholder="3290892891" pattern="[0-9]{10,}" required></label>
+          <label id="qual-label" for="dropdown">Qualification
+            <select id="dropdown" name="qualification">
+              <option value="">(select one)</option>
+              <option value="1">Elementary school</option>
+              <option value="2">High school diploma</option>
+              <option value="3">Bachelor's degree</option>
+              <option value="4">Master's degree</option>
+              <option value="5">PhD</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Main programming language:</legend>
+          <label id="java-label" for="java"><input id="java" name="language" value="java-lang" class="inline" type="radio" checked> Java</label>
+          <label id="c-label" for="c"><input id="c" name="language" value="c-lang" class="inline" type="radio" checked> C</label>
+          <label id="c-sharp-label" for="c-sharp"><input id="c-sharp" name="language" value="c-sharp-lang" class="inline" type="radio" checked> C#</label>
+          <label id="js-label" for="js"><input id="js" name="language" value="js-lang" class="inline" type="radio" checked> Javascript</label>
+          <label id="python-label" for="python"><input id="python" name="language" value="python-lang" class="inline" type="radio" checked> Python</label>
+          <label id="other-label" for="other"><input id="other" name="language" value="other-lang" class="inline" type="radio" checked> Other</label>
+        </fieldset>
+        <fieldset>
+          <legend>What job role are you interested in?</legend>
+          <label id="jr-java-label" for="jr-java"><input id="jr-java" name="job-role" value="jr-java-dev" class="inline" type="checkbox"> Junior Java Developer</label>
+          <label id="sr-java-label" for="sr-java"><input id="sr-java" name="job-role" value="sr-java-dev" class="inline" type="checkbox"> Senior Java Developer</label>
+          <label id="backend-label" for="backend"><input id="backend" name="job-role" value="backend-dev" class="inline" type="checkbox"> Back-end Developer</label>
+          <label id="fullstack-label" for="fullstack"><input id="fullstack" name="job-role" value="fullstack-dev" class="inline" type="checkbox"> Full-stack Developer</label>
+          <label id="other-role-label" for="other-role"><input id="other-role" name="job-role" value="other-job-role" class="inline" type="checkbox"> Other job role</label>
+        </fieldset>
+        <fieldset>
+          <label id="company-label" for="company">What do you like about our company?<textarea id="company" name="company-descr" rows="6" cols="30" placeholder="I like the company's commitment to ensuring a healthy work environment..."></textarea></label>
+          <label id="cv-label" for="cv">Send us your CV:<input id="cv" name="curriculum" type="file" required></label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </main>
+  </body>
+</html>
