@@ -1,21 +1,59 @@
 body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-  }
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url(https://sdmntpreastus2.oaiusercontent.com/files/00000000-a55c-61f6-81e9-683a23dd4ed8/raw?se=2025-04-21T15%3A18%3A36Z&sp=r&sv=2024-08-04&sr=b&scid=9f3a864e-b31b-536e-a3e6-801b740c569f&skoid=06d77cea-897f-49c6-9d78-20f6510f72af&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-21T07%3A08%3A16Z&ske=2025-04-22T07%3A08%3A16Z&sks=b&skv=2024-08-04&sig=OyZD/itElA8DOW/xwyWOCjTBEZfRiedvCmfAwZusiSY%3D);
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+}
   
   label {
     display: block;
-  }
+}
   
-  input,
-  textarea,
-  select {
-    width: 100%;
-  }
+#title, #description {
+  text-align: center;
+  margin: 1em auto;
+  color: #ffffff;
+}
   
-  .inline {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-  }
+form {
+  width: 60vw;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: #e3f6f5;
+}
+
+fieldset {
+  border: none;
+  padding: 2em 1.5em 2em 1em;
+  border-bottom: 3px solid rgba(59, 59, 79, 0.5);
+  margin-bottom: 1em;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+  padding-top: 0.5em;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2.5em;
+}
+
+#company-label {
+  margin: 0;
+}
+  
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
