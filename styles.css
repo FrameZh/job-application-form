@@ -2,13 +2,14 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background-image: url(https://sdmntpreastus2.oaiusercontent.com/files/00000000-a55c-61f6-81e9-683a23dd4ed8/raw?se=2025-04-21T15%3A18%3A36Z&sp=r&sv=2024-08-04&sr=b&scid=9f3a864e-b31b-536e-a3e6-801b740c569f&skoid=06d77cea-897f-49c6-9d78-20f6510f72af&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-21T07%3A08%3A16Z&ske=2025-04-22T07%3A08%3A16Z&sks=b&skv=2024-08-04&sig=OyZD/itElA8DOW/xwyWOCjTBEZfRiedvCmfAwZusiSY%3D);
-  font-family: Poppins, sans-serif;
-  font-size: 1rem;
-}
-  
-  label {
-    display: block;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-image: url(./img/6005990.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
   
 #title, #description {
@@ -16,25 +17,31 @@ body {
   margin: 1em auto;
   color: #ffffff;
 }
+
+#description {
+  margin-bottom: 2em;
+}
   
 form {
   width: 60vw;
-  max-width: 700px;
+  max-width: 600px;
   min-width: 300px;
   margin: 0 auto;
-  background-color: #e3f6f5;
+  background-color: rgba(182, 220, 254, 0.8);
+  padding: 2.5em 3em 2.5em 2.5em;
+  border-radius: 10px;
 }
 
 fieldset {
   border: none;
-  padding: 2em 1.5em 2em 1em;
-  border-bottom: 3px solid rgba(59, 59, 79, 0.5);
-  margin-bottom: 1em;
+  border-bottom: 3px solid rgba(17, 17, 120, 0.5);
+  margin-bottom: 1.5rem;
 }
 
 fieldset:last-of-type {
   border-bottom: none;
-  padding-top: 0.5em;
+  padding-top: 0;
+  margin-bottom: 0;
 }
 
 label {
@@ -45,7 +52,18 @@ label {
 input, textarea, select {
   margin: 10px 0 0 0;
   width: 100%;
-  min-height: 2.5em;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #25319ae2;
+  border: 1px solid #25319ae2;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #99f1ff;
+  opacity: 0.7;
 }
 
 #company-label {
@@ -56,4 +74,33 @@ input, textarea, select {
   width: unset;
   margin: 0 0.5em 0 0;
   vertical-align: middle;
+}
+
+#submit, #terms-and-conditions {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.other-projects {
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 1.5em;
+}
+
+a {
+  color: rgb(78, 58, 255);
+}
+
+a:visited {
+  color: #e4d8f0;
+}
+
+a:hover {
+  color: #e4d8f0;
+}
+
+a:active {
+  color: #e4d8f0;
 }
